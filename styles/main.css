@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+}
+
+.rating-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: hsl(216, 12%, 8%);
+}
+
+.rating-section {
+    width: 350px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.rating-part-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rating-section h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3rem;
+}
+
+.rating-section p {
+    color: hsl(217, 12%, 63%);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.star-icon {
+    width: 34px;
+    height: 34px;
+    background: hsl(216deg 12% 8% / 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.star-icon img {
+    width: 40%;
+}
+
+.rating-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-number {
+    width: 40px;
+    height: 40px;
+    background: hsl(216deg 12% 8% / 50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: hsl(217, 12%, 63%);
+}
+
+.rating-number:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: white ;
+}
+
+.rating-number.active {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.submit-btn {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: hsl(25, 97%, 53%);
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    color:white;
+    background: hsl(25, 97%, 53%);
+}
+
+.rating-part-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    display: none;
+}
+
+.rating-part-2 .thank-you-img {
+    text-align: center;
+}
+
+.rating-part-2 .thank-you-img img {
+    width: 70%;
+}
+
+.rating-part-2 .rating-selected {
+    background: hsl(216deg 12% 8% / 50%);
+    padding: 4px 15px;
+    border-radius: 20px;
+}
+
+.rating-part-2 .rating-selected span {
+    color: hsl(25, 97%, 53%);
+    font-size: 11px;
+}
+
+.rating-part-2 h3 {
+    color: white;
+}
+
+.rating-part-2 p {
+    font-size: 12px;
+}

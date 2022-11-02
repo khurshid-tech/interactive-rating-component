@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Rating Component</title>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="rating-wrapper">
+    <div class="rating-section">
+      <div class="rating-part-1">
+        <div class="star-icon">
+          <img src="images/icon-star.svg" alt="icon star for rating">
+        </div>
+        <h2>How did we do ?</h2>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <div class="rating-label">
+          <div class="rating-number" data-star="1">1</div>
+          <div class="rating-number" data-star="2">2</div>
+          <div class="rating-number" data-star="3">3</div>
+          <div class="rating-number" data-star="4">4</div>
+          <div class="rating-number" data-star="5">5</div>
+        </div>
+        <button class="submit-btn" onclick="submitRating()">Submit</button>
+      </div>
+      <div class="rating-part-2">
+        <div class="thank-you-img">
+          <img src="images/illustration-thank-you.svg" alt="thank you image" />
+        </div>
+        <div class="rating-selected">
+          <span>You selected <span id="starValue"></span> out of 5</span>
+        </div>
+        <h3>Thank You!</h3>
+        <p>We appreciate you taking the time to give a rating.If you ever need more support, don't hesitate to get in touch!</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/script.js"></script> 
+</html>
